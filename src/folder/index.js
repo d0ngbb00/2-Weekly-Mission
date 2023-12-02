@@ -1,5 +1,5 @@
 import ReactDOM from "react-dom/client";
-import FolderPage from "./folder/components/FolderPage";
+import App from "./components/App";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<FolderPage />);
+root.render(<App />);

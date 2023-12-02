@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
 import "../css/CardList.css";
+import Star from "../assets/star.svg";
+import Kebab from "../assets/kebab.svg";
 
 function formatDate(dateString) {
   const options = { year: "numeric", month: "numeric", day: "numeric" };
@@ -54,9 +56,11 @@ function CardList({ folderData }) {
           <li key={link.id} className="card">
             <a href={link.url} target="_blank">
               <div className="cardImgContainer">
-                <img src={link.imageSource} />
+                <img className="cardImage" src={link.imageSource} />
+                <img className="star" src={Star} />
               </div>
-              <p className="timeDiff">{calculateTimeDiff(link.createdAt)}</p>
+              <p className="timeDiff">{calculateTimeDiff(link.createdAt)}
+                <img className="kebab" src={Kebab} /></p>
               <p className="title">{link.title}</p>
               <p className="date">{formatDate(link.createdAt)}</p>
             </a>

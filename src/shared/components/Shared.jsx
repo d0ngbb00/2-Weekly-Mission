@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
-import "../css/App.css";
-import Nav from "./Nav";
+import "../css/Shared.css";
+import Nav from "../../components/Nav";
 import Header from "./Header";
-import Search from "./Search";
-import CardList from "./CardList";
-import Footer from "./Footer";
+import Search from "../../components/Search";
+import CardList from "../../components/CardList";
+import Footer from "../../components/Footer";
 
 function App() {
   const [profileData, setProfileData] = useState({});
